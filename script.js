@@ -82,4 +82,9 @@ function chooseOperation(selectedOperation) {
     previousOperand = '';
     updateDisplay(); // Refresh the display with the new state
   }
+
+  function updateDisplay() {
+    document.getElementById('current-operand').innerText = currentOperand;
+    document.getElementById('previous-operand').innerText = previousOperand + ' ' + (operation || '');
+  }
   
