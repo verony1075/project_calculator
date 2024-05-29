@@ -97,4 +97,12 @@ function chooseOperation(selectedOperation) {
     currentOperand = currentOperand.toString().slice(0, -1);
     updateDisplay();
   }
-  
+  function appendDot() {
+    if (currentOperand.includes('.')) return; // Prevent multiple decimals
+    if (currentOperand === '') currentOperand = '0'; // If empty, start with '0.'
+    currentOperand += '.';
+    updateDisplay();
+  }
+  clearButton.addEventListener('click', clear);
+deleteButton.addEventListener('click', deleteNumber);
+dotButton.addEventListener('click', appendDot);
