@@ -7,3 +7,16 @@ const equalsButton = document.getElementById('equals');
 const clearButton = document.getElementById('clear');
 const deleteButton = document.getElementById('delete');
 const dotButton = document.getElementById('dot');
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        appendNumber(button.innerText);
+        updateDisplay();
+    });
+  });
+  
+  operationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        chooseOperation(button.innerText);
+        updateDisplay();
+    });
+  });
