@@ -45,3 +45,13 @@ function appendNumber(number) {
   if (number === '.' && currentOperand.includes('.')) return; // Preventing multiple decimals
   currentOperand = currentOperand.toString() + number.toString();
 }
+function chooseOperation(selectedOperation) {
+    if (currentOperand === '') return;
+    if (previousOperand !== '') {
+        compute();
+    }
+    operation = selectedOperation;
+    previousOperand = currentOperand;
+    currentOperand = '';
+  }
+  
