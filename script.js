@@ -36,3 +36,12 @@ function deleteNumber() {
 function compute() {
   // Function to compute the expression
 }
+
+let currentOperand = '';
+let previousOperand = '';
+let operation = null;
+
+function appendNumber(number) {
+  if (number === '.' && currentOperand.includes('.')) return; // Preventing multiple decimals
+  currentOperand = currentOperand.toString() + number.toString();
+}
