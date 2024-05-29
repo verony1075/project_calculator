@@ -106,3 +106,17 @@ function chooseOperation(selectedOperation) {
   clearButton.addEventListener('click', clear);
 deleteButton.addEventListener('click', deleteNumber);
 dotButton.addEventListener('click', appendDot);
+// this line below is for the additional button i added
+switch (operation) {
+    // Existing cases
+    case '√':
+        computation = Math.sqrt(current);
+        break;
+    case '^':
+        computation = Math.pow(prev, current);
+        break;
+    case '%':
+        computation = (prev / 100) * current;
+        break;
+    // Continue with the rest
+  }
