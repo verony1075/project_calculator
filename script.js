@@ -93,3 +93,8 @@ function chooseOperation(selectedOperation) {
     operation = null;
     updateDisplay();
   }
+  function deleteNumber() {
+    currentOperand = currentOperand.toString().slice(0, -1);
+    updateDisplay();
+  }
+  
