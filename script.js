@@ -20,3 +20,19 @@ numberButtons.forEach(button => {
         updateDisplay();
     });
   });
+  clearButton.addEventListener('click', clear);
+deleteButton.addEventListener('click', deleteNumber);
+equalsButton.addEventListener('click', compute);
+dotButton.addEventListener('click', appendDot);
+
+function clear() {
+  // Function to clear the calculator's state
+}
+
+function deleteNumber() {
+  // Function to delete the last entered number or decimal
+}
+
+function compute() {
+  // Function to compute the expression
+}
