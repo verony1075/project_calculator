@@ -130,3 +130,22 @@ switch (operation) {
     // Mapping other keys to operations
     updateDisplay();
   });
+
+  let memoryValue = 0;
+
+function memoryAdd() {
+  memoryValue += parseFloat(currentOperand);
+}
+
+function memorySubtract() {
+  memoryValue -= parseFloat(currentOperand);
+}
+
+function memoryRecall() {
+  currentOperand = memoryValue.toString();
+  updateDisplay();
+}
+
+function memoryClear() {
+  memoryValue = 0;
+}
