@@ -26,11 +26,11 @@ equalsButton.addEventListener('click', compute);
 dotButton.addEventListener('click', appendDot);
 
 function clear() {
-  // Function to clear the calculator's state
+
 }
 
 function deleteNumber() {
-  // Function to delete the last entered number or decimal
+ 
 }
 
 function compute() {
