@@ -120,3 +120,13 @@ switch (operation) {
         break;
     // Continue with the rest
   }
+  // this is for user enable to input both numbers and operations
+  document.addEventListener('keydown', (event) => {
+    if (event.key >= 0 && event.key <= 9) appendNumber(event.key);
+    if (event.key === '.') appendDot();
+    if (event.key === 'Enter' || event.key === '=') compute();
+    if (event.key === 'Backspace') deleteNumber();
+    if (event.key === 'Escape') clear();
+    // Mapping other keys to operations
+    updateDisplay();
+  });
