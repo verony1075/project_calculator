@@ -87,4 +87,9 @@ function chooseOperation(selectedOperation) {
     document.getElementById('current-operand').innerText = currentOperand;
     document.getElementById('previous-operand').innerText = previousOperand + ' ' + (operation || '');
   }
-  
+  function clear() {
+    currentOperand = '';
+    previousOperand = '';
+    operation = null;
+    updateDisplay();
+  }
