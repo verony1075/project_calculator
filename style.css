@@ -46,10 +46,10 @@ body {
   }
   
   button.operation {
-    background-color: #fe9241;
+    background-color:#FF5580;
     color: #fff;
   }
-  
+
   button.operation:hover {
     background-color: #ffab62;
   }
