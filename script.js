@@ -149,3 +149,5 @@ function memoryRecall() {
 function memoryClear() {
   memoryValue = 0;
 }
+
+//other functionality for memory recall etc
