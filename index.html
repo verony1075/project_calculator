@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<! adding a brightness mode / dark mode><div id="brightness-controls">
+<div id="brightness-controls">
+    <label for="brightnessRange">Brightness:</label>
+    <input type="range" id="brightnessRange" min="0" max="100" value="100" step="1">
+  </div>
+
+
+
  <div id="calculator">
   <div id="display">
       <div id="previous-operand"></div>
@@ -40,10 +49,7 @@
   <button type="button" class="operation" id="power">^</button>
   <button type="button" class="operation" id="percentage">%</button>
 </div>
-<! adding a brightness mode / dark mode><div id="brightness-controls">
-  <label for="brightnessRange">Brightness:</label>
-  <input type="range" id="brightnessRange" min="0" max="100" value="100" step="1">
-</div>
+
   <script src="script.js"></script>
 </body>
 </html>
