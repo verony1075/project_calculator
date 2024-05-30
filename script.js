@@ -151,3 +151,23 @@ function memoryClear() {
 }
 
 //other functionality for memory recall etc
+// Get the brightness range input element
+const brightnessRange = document.getElementById("brightnessRange");
+
+// Add event listener to detect changes in brightness level
+brightnessRange.addEventListener("input", function() {
+    // Get the current brightness value
+    const brightnessValue = brightnessRange.value;
+
+    // Update the brightness of the calculator interface
+    updateBrightness(brightnessValue);
+});
+
+// Function to update the brightness of the calculator interface
+function updateBrightness(brightnessValue) {
+    // Convert brightness value to percentage
+    const brightnessPercentage = brightnessValue + "%";
+
+    // Set the brightness level using CSS filter property
+    document.body.style.filter = "brightness(" + brightnessPercentage + ")";
+}
