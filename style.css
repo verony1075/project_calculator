@@ -57,3 +57,18 @@ body {
   button.span-two {
     width: calc(40% + 15px);
   }
+  /* adding some style for the brightness*/
+#brightness-controls {
+  margin-bottom: 20px; /* Add some space below the brightness control */
+}
+
+#brightness-controls label {
+  display: block; /* Display the label as a block element */
+  margin-bottom: 5px; /* Add some space below the label */
+}
+
+#brightnessRange {
+  width: 100%; /* Make the range input element fill its container */
+}
+
+/* Add more styling as needed */
