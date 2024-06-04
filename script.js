@@ -163,7 +163,6 @@ brightnessRange.addEventListener("input", function() {
     updateBrightness(brightnessValue);
 });
 
-// Function to update the brightness of the calculator interface
 function updateBrightness(brightnessValue) {
     // Convert brightness value to percentage
     const brightnessPercentage = brightnessValue + "%";
@@ -171,3 +170,4 @@ function updateBrightness(brightnessValue) {
     // Set the brightness level using CSS filter property
     document.body.style.filter = "brightness(" + brightnessPercentage + ")";
 }
+
